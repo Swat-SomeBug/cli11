@@ -1,0 +1,8 @@
+: Units
+env -c $out_root -- $* >>~%EOM% 2>-
+%(
+%.*%
+%)+
+%All tests passed.*%
+
+EOM

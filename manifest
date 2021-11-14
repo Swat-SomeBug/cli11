@@ -1,0 +1,13 @@
+: 1
+name: cli11
+version: 2.1.3-a.0.z
+summary: cli11 C++ library
+license: BSD
+description-file: UPSTREAM_README.md
+url: https://github.com/CLIUtils/CLI11
+email: swat.somebug@gmail.com
+#build-error-email: swat.somebug@gmail.com
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0
+#depends: libhello ^1.0.0
+depends: catch2

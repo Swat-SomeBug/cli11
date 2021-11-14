@@ -1,0 +1,7 @@
+./: lib{cli11}: hxx{**}
+lib{cli11}: cxx.export.poptions += "-I$src_base"
+hxx{*}:
+{
+  install         = include/CLI/
+  install.subdirs = true
+}

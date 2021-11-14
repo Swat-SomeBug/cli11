@@ -1,0 +1,1 @@
+../upstream/tests/informational.cpp

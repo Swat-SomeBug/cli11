@@ -1,0 +1,31 @@
+# Test executables.
+#
+HelpersTest
+ConfigFileTest 
+OptionTypeTest 
+SimpleTest 
+AppTest 
+SetTest 
+TransformTest 
+CreationTest 
+SubcommandTest 
+HelpTest 
+FormatterTest 
+NewParseTest 
+OptionalTest 
+DeprecatedTest 
+StringParseTest 
+ComplexTypeTest 
+TrueFalseTest 
+OptionGroupTest
+WindowsTest
+BoostOptionTypeTest
+TimerTest
+
+# Testscript output directories (can be symlinks).
+#
+test
+test-*
+
+# Temp data created by test
+pair_check_file2.txt

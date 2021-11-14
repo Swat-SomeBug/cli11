@@ -1,0 +1,33 @@
+import libs = cli11%lib{cli11}
+import libs += catch2%liba{catch2wmain}
+
+cli11_tests =  HelpersTest \
+               ConfigFileTest \
+               OptionTypeTest \
+               SimpleTest \
+               AppTest \
+               SetTest \
+               TransformTest \
+               CreationTest \
+               SubcommandTest \
+               HelpTest \
+               FormatterTest \
+               NewParseTest \
+               OptionalTest \
+               DeprecatedTest \
+               StringParseTest \
+               ComplexTypeTest \
+               TrueFalseTest \
+               OptionGroupTest
+
+for n : $cli11_tests
+{
+  ./: exe{$n}: cxx{$n} $libs testscript
+}
+
+if($cxx.target.class == 'win32')
+{
+  ./: exe{WindowsTest}: cxx{WindowsTest} $libs testscript
+}
+
+./: exe{TimerTest}: cxx{TimerTest} $libs testscript
